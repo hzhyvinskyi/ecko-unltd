@@ -62,6 +62,9 @@ a#scrollUp i{
     font-size:30px;
 }
 
+.profile-list li {
+    margin-bottom:5px;
+}
 
 /*************************
 *******Header CSS******
@@ -1564,7 +1567,7 @@ footer {
 **************************/
 
 .header-admin, .footer-admin, .main-admin {
-	background-color:#f1f1f1;
+	background-color:#f7f7e2;
 }
 
 .main-admin {
@@ -1577,7 +1580,8 @@ footer {
 
 .admin-main-item a {
     display:block;
-    margin:5px 0;
+    margin:8px 0;
+    font-size:18px;
 }
 
 .header-admin {
@@ -1777,8 +1781,10 @@ footer {
     margin:0;
 }
 
-.about-bullet {
+.about-slide {
     width:100%;
+    cursor:pointer;
+    border-radius:3px;
 }
 
 .accordion-header__khaki {
@@ -1812,4 +1818,12 @@ footer {
 
 .blog__image {
     width:100%;
+}
+
+.blog__sidebar {
+    text-align:center;
+}
+
+.blog__sidebar ul, li {
+    padding: 0;
 }

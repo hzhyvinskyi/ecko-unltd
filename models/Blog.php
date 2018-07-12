@@ -25,4 +25,29 @@ class Blog
 
 		return $articleList;
 	}
+
+	public static function getArticle($id)
+    {
+        $db = Db::getConnection();
+
+        $result = $db->query("
+            SELECT id, title, content, image, date, author
+            FROM blog
+            WHERE id = $id
+            AND status = 1
+        ");
+
+        foreach ($result as $row) {
+            $article[] = [
+                'id' => $row['id'],
+                'title' => $row['title'],
+                'content' => $row['content'],
+                'image' => $row['image'],
+                'date' => $row['date'],
+                'author' => $row['author']
+            ];
+        }
+
+        return $article;
+    }
 }

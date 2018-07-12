@@ -6,7 +6,9 @@
 				<h2 class="blog__main-title">Latest articles</h2>
 				<?php foreach ($articleList as $article): ?>
 					<div class="blog__article">
-						<h3 class="blog__title"><?=$article['title']?></h3>
+						<a href="/blog/article/<?=$article['id']?>">
+							<h3 class="blog__title"><?=$article['title']?></h3>
+						</a>
 						<div class="blog__date"><?=$article['date']?></div>
 						<img class="blog__image" src="<?=$article['image']?>">
 						<p class="blog__short-content">
@@ -14,38 +16,48 @@
 						</p>
 						<a href="/blog/article/<?=$article['id']?>">Read more</a>
 					</div>
+					<hr>
+					<br>
 				<?php endforeach; ?>
 			</div>
 			<div class="col-lg-3">
-				<aside>
+				<aside class="blog__sidebar">
 					<div>
-						<h3>Njagk wajng wangh</h3>
+						<h3>News</h3>
 						<ul>
-							<li><a href="">gawhgawh</a></li>
-							<li><a href="">hwahh</a></li>
-							<li><a href="">rnwean</a></li>
-							<li><a href="">neanea</a></li>
-							<li><a href="">naenean</a></li>
+							<li><a href="#">News item example #1</a></li>
+							<li><a href="#">News item example #2</a></li>
+							<li><a href="#">News item example #3</a></li>
+							<li><a href="#">News item example #4</a></li>
+							<li><a href="#">News item example #5</a></li>
+							<li><a href="#">News item example #6</a></li>
+							<li><a href="#">News item example #7</a></li>
 						</ul>
 					</div>
+					<br>
 					<div>
-						<h3>Xjagk wajng wangh</h3>
+						<h3>Articles</h3>
 						<ul>
-							<li><a href="">naernera</a></li>
-							<li><a href="">nearn</a></li>
-							<li><a href="">neanea</a></li>
-							<li><a href="">nean</a></li>
-							<li><a href="">nanan</a></li>
+							<li><a href="#">Article example #1</a></li>
+							<li><a href="#">Article example #2</a></li>
+							<li><a href="#">Article example #3</a></li>
+							<li><a href="#">Article example #4</a></li>
+							<li><a href="#">Article example #5</a></li>
+							<li><a href="#">Article example #6</a></li>
+							<li><a href="#">Article example #7</a></li>
 						</ul>
 					</div>
+					<br>
 					<div>
-						<h3>Yjagk wajng wangh</h3>
+						<h3>Related links</h3>
 						<ul>
-							<li><a href="">narn</a></li>
-							<li><a href="">aernan</a></li>
-							<li><a href="">narn</a></li>
-							<li><a href="">aernan</a></li>
-							<li><a href="">naenr</a></li>
+							<li><a href="#">Link example #1</a></li>
+							<li><a href="#">Link example #2</a></li>
+							<li><a href="#">Link example #3</a></li>
+							<li><a href="#">Link example #4</a></li>
+							<li><a href="#">Link example #5</a></li>
+							<li><a href="#">Link example #6</a></li>
+							<li><a href="#">Link example #7</a></li>
 						</ul>
 					</div>
 				</aside>

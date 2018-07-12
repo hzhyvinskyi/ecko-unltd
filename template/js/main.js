@@ -72,4 +72,14 @@ $(document).ready(function(){
 			}
 		})
 	});
+
+	$('.about-slide').click(function () {
+		$(this).fadeOut(500, function () {
+			if ($(this).attr('src') !== '/template/img/home/award-winning-websites.jpg') {
+				$(this).attr('src', '/template/img/home/award-winning-websites.jpg').fadeIn(500);
+			} else {
+				$(this).attr('src', '/template/img/home/cb2c65b2d6facc14662.jpg').fadeIn(500);
+			}
+		});
+	})
 });
